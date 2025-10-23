@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>顾卜婧的网页</title>
+    <link rel="shortcut icon" href="/shishishou/favicon.ico" type="image/x-icon">
+    <style>
+        .body {
+            margin: 0;
+
+            /* 清除body默认外边距 */
+        }
+
+        .wenzi {
+            margin: 10px;
+            font-family: "楷体";
+            font-size: 20px;
+            text-indent: 2em;
+        }
+
+        .shangbiankuang {
+            height: 120px;
+            background: #f0f0f0;
+            /* 2. 加背景色，让盒子可视化（可选，也可用 border） */
+            /* border: 1px solid #ccc; 若不想用背景色，可加边框 */
+            display: flex;
+            /* 3. 用 flex 让内部图片居中，替代 absolute 定位 */
+            align-items: center;
+            /* 图片垂直居中 */
+            justify-content: center;
+            /* 图片水平居中 */
+            /* 添加圆角效果，数值可根据需要调整 */
+            border-radius: 10px;
+        }
+
+        .shangbiankuang img {
+            max-width: 100px;
+            max-height: 100px;
+
+        }
+
+        .neirong img {
+            max-width: 300px;
+            max-height: 300px;
+            border-radius: 10px;
+        }
+
+        .neirong {
+            margin-top: 10px;
+            border-color: aqua;
+            border-width: 1px;
+            border-style: solid;
+            border-radius: 10px;
+            /* 移除原有的 display: flex; 避免嵌套flex影响排列 */
+            padding: 10px;
+            /* 可选：增加内边距让内容不贴边 */
+            display: flex;
+
+        }
+
+        .daneirong {
+            display: flex;
+            flex-direction: column;
+            /* 垂直方向排列子元素 */
+            gap: 20px;
+            /* 子元素之间的间距 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="shangbiankuang">
+        <img src="/shishishou/荷花 (小).webp" alt="头像">
+    </div>
+    <div class="daneirong">
+        <div class="neirong">
+            <img src="/shishishou/大明湖 (小).webp" loading="lazy">
+
+            <div class="wenzi">
+
+                暑假里雨后的一天，在大明湖终于看到了大明湖的荷花。
+            </div>
+        </div> <!--这里闭合第一个neirong盒子-->
+        <div class="neirong">
+            <img src="/shishishou/省博山东龙 (小).webp" loading="lazy">
+
+            <div class="wenzi">
+
+                山东省博物馆里的山东龙化石，这是站在二楼拍摄的——真大！
+            </div>
+        </div><!--这里闭合第二个neirong盒子-->
+        <div class="neirong">
+            <img src="/shishishou/海岱楼小龙 (小).webp" loading="lazy">
+
+            <div class="wenzi">
+
+                淄博不是很好玩，海岱楼离市区有点远，海岱楼挺漂亮，门口的小龙很可爱！
+            </div>
+        </div>
+        <div class="neirong">
+            <img src="/shishishou/淮海路粉色的名创优品 (小).webp" loading="lazy">
+
+            <div class="wenzi">
+
+                上海的淮海路，确实有很多新奇的店，第一次见到这么“粉”的名创优品。
+            </div>
+        </div>
+        <div class="neirong">
+            <img src="/shishishou/天坛公园祈年殿 (小).webp" loading="lazy">
+
+            <div class="wenzi">
+
+                一起坐了晚上的卧铺去看陈翔演唱会，第二天一大早就到北京了。北京的冬天很冷，天坛公园好大啊！
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
